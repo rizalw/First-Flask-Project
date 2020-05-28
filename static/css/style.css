@@ -1,0 +1,30 @@
+body{
+    font-family: sans-serif;
+    text-align: center;
+}
+table{
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+a{
+    text-decoration: none;
+    color: black
+}
+td, th{
+    border: 1px solid black;
+}
+.tombol{
+    display: block;
+    padding : 5px
+}
+.form{
+    display: block;
+    margin-top: 10px;
+}
+form{
+    margin :0 auto;
+}
+th, td{
+    padding : 10px
+}

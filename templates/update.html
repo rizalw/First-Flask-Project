@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Powered By Flask</title>
+{% endblock %}
+
+{% block body %}
+<h2 style = "text-align: center;">Update Data Buku</h2>
+<div class="form">    
+    <form action="/update/{{ tasks.id }}" method="POST">
+        <label for="judul">Judul Buku</label>
+        <br>
+        <input type="text" name="judul" id="judul" value="{{ tasks.title }}">
+        <br>
+        <label for="deskripsi">Deskripsi</label>
+        <br>
+        <textarea name="deskripsi" id="deskripsi" cols="30" rows="5">{{ tasks.description }}</textarea>
+        <!--<input type="text" name="deskripsi" id="deskripsi" value="{{ tasks.description }}">-->
+        <br>
+        <input type="submit" value="Perbaharui">
+    </form>
+</div>
+{% endblock %}
